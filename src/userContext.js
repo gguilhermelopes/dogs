@@ -37,7 +37,7 @@ export const UserStorage = ({ children }) => {
       setLoading(true);
       const { url, options } = TOKEN_POST({ username, password });
       const tokenResponse = await fetch(url, options);
-      if (!tokenResponse.ok) throw new Error(`Usuário não encontrado.`);
+      if (!tokenResponse.ok) throw new Error(`Usuário ou senha inválidos.`);
       const { token } = await tokenResponse.json();
       window.localStorage.setItem("token", token);
       await getUser(token);
@@ -66,6 +66,8 @@ export const UserStorage = ({ children }) => {
         } finally {
           setLoading(false);
         }
+      } else {
+        setLogin(false);
       }
     }
     autoLogin();
