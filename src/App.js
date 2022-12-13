@@ -8,6 +8,9 @@ import Login from "./Components/Login/Login";
 import { UserStorage } from "./userContext";
 import User from "./Components/User/User";
 import ProtectedRoute from "./Components/Interface Elements/ProtectedRoute";
+import Photo from "./Components/Photo/Photo";
+import UserProfile from "./Components/User/UserProfile";
+import Error404 from "./Components/Error404";
 
 const App = () => {
   return (
@@ -26,6 +29,9 @@ const App = () => {
                 </ProtectedRoute>
               }
             />
+            <Route path="photo/:id" element={<Photo />} />
+            <Route path="perfil/:user" element={<UserProfile />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />
         </UserStorage>
