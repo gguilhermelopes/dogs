@@ -5,6 +5,7 @@ import useForm from "../../Hooks/useForm";
 import useFetch from "../../Hooks/useFetch";
 import Error from "../Interface Elements/Error";
 import { PASSWORD_RESET } from "../../api";
+import Head from "../Interface Elements/Head";
 
 const LoginPasswordReset = () => {
   const [login, setLogin] = React.useState("");
@@ -41,6 +42,8 @@ const LoginPasswordReset = () => {
 
   return (
     <section>
+      <Head title="Resetar senha" />
+
       <h1 className="title">Resete sua senha</h1>
       {success ? (
         <p style={{ color: "#4c1" }}>Senha alterada com sucesso!</p>
