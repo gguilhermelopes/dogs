@@ -45,6 +45,18 @@ const Feed = ({ user }) => {
           setInfinite={setInfinite}
         />
       ))}
+      {!infinite && (
+        <p
+          style={{
+            margin: "3rem",
+            textAlign: "center",
+            fontWeight: "bold",
+            color: "#333",
+          }}
+        >
+          Não existem mais fotos há serem carregadas.
+        </p>
+      )}
     </div>
   );
 };

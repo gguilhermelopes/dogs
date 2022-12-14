@@ -6,7 +6,7 @@ import Error from "../Interface Elements/Error";
 import Loading from "../Interface Elements/Loading";
 import styles from "./FeedPhoto.module.css";
 
-const FeedPhoto = ({ user, setModalPhoto, page, setInfinite }) => {
+const FeedPhoto = ({ user, setModalPhoto, page, setInfinite, infinite }) => {
   const { data, loading, error, request } = useFetch();
 
   React.useEffect(() => {
