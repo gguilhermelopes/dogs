@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -15,7 +15,7 @@ import Error404 from "./Components/Error404";
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <UserStorage>
           <Header />
           <main className="AppBody">
@@ -37,7 +37,7 @@ const App = () => {
           </main>
           <Footer />
         </UserStorage>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };

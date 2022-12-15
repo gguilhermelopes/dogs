@@ -54,7 +54,7 @@ const Feed = ({ user }) => {
             color: "#333",
           }}
         >
-          Não existem mais fotos há serem carregadas.
+          Não existem mais fotos a ser carregadas.
         </p>
       )}
     </div>
