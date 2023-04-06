@@ -21,7 +21,7 @@ Projeto concluído!
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-* Você instalou a versão mais recente de `Node.js`.
+* Você instalou a versão mais recente de `Node.js` e `npm`.
 
 ## 🚀 Instalando Dogs
 
